@@ -1,3 +1,10 @@
+---
+layout: post
+title: git的使用
+category : git
+tags : [git, tag1, tag2]
+stickie: true
+---
 ## git的使用
 
 #### git常用命令表格
