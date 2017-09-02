@@ -1,6 +1,6 @@
 
 # Site settings
-title: Project-Gaia
+title: Project-ZeroWinNing
 email:
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -11,10 +11,10 @@ url: "" # the base hostname & protocol for your site
 
 # User setting
 owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
+email: zerowinning@hotmail.com
+facebook_username: zerowinning
+twitter_username: zerowinning
+github_username: zerowinning
 address:
   - line:
   - line:
