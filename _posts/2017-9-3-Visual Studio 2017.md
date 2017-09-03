@@ -7,16 +7,16 @@
 
 全语言据说100G
 ```
-vs_enterprise.exe --layout c:\vs2017offline
+vs_enterprise.exe --layout d:\vs2017offline
 ```
 简体中文20G
 ```
-vs_enterprise.exe --layout c:\vs2017offline --lang zh-CN
+vs_enterprise.exe --layout d:\vs2017offline --lang zh-CN
 ```
 
 .net core开发2G
 ```
-vs_community.exe --layout e:\vs2017offline --lang en-US --add Microsoft.VisualStudio.Workload.NetCoreTools Microsoft.VisualStudio.Workload.NetWeb
+vs_enterprise.exe --layout d:\vs2017offline --lang en-US --add Microsoft.VisualStudio.Workload.NetCoreTools Microsoft.VisualStudio.Workload.NetWeb
 ```
 
 ### 安装证书
