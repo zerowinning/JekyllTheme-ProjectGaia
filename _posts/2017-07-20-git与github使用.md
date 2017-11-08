@@ -28,3 +28,53 @@ stickie: true
 增删改》add》commit》pull 
 
 
+# Edit hello.py and main.py
+git add hello.py
+git commit
+ 
+# Realize you forgot to add the changes from main.py
+git add main.py
+git commit --amend --no-edit
+
+
+
+永久删除git库中的所有大文件或者机密文件
+//看.git空间大小
+$du -sh .git
+
+[ jonny@wheezy ~ ]
+$ du .git -lsh 
+126M .
+
+删除匹配*.db的所有文件
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch *.db' --prune-empty --tag-name-filter cat -- --all
+
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch *.zip' --prune-empty --tag-name-filter cat -- --all
+立刻回收空间
+rm -rf .git/refs/original/ 
+git reflog expire --expire=now --all
+git gc --prune=now
+git gc --aggressive --prune=now
+
+[ jonny@wheezy ~ ]
+$ rm -rf .git/refs/original/ 
+$ git reflog expire --expire=now --all
+$ git gc --prune=now
+$ git gc --aggressive --prune=now
+
+
+最后把改动强制推送到远端
+git push origin --force --all
+
+//checkout用法1从暂存区取出来，也就是把最后一次git add 的内容取回，回到最近一次git commit或git add时的状态。
+git checkout -- first.txt
+//checkout用法2创建分支并切换
+git checkout -b dev
+//checkout用法3切换分支
+git checkout dev
+
+
+//删除文件
+rm first.txt
+//版本库中删除
+git rm first.txt
