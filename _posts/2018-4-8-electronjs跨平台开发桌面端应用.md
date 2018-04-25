@@ -66,12 +66,12 @@ electron-forge start
 
 ```
 
-![](//upload-images.jianshu.io/upload_images/1293833-fe2ed5ff45cc0eeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/677)
+![](../img/2018-4-8/1.png)
 
 
 1.  这样就可以看到基本的app界面了。
 
-![](//upload-images.jianshu.io/upload_images/1293833-c83c4bc43f8fbe8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700)
+![](../img/2018-4-8/2.png)
 
 
 
@@ -80,18 +80,18 @@ electron-forge start
 1.  这里某使用**Visual Studio Code**来开发app。
 2.  将`notepad`文件夹整个拖到VS Code中打开（或者点菜单`文件-打开文件夹`选择`notepad`文件夹打开项目），可以看一下项目的目录结构：`node_modules`文件夹下是各种模块、类库，`src`下是app的源代码文件，`package.json`是描述包的文件。
 
-![](//upload-images.jianshu.io/upload_images/1293833-52f4e1db93d04a74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/279)
+![](../img/2018-4-8/3.png)
 
 
 
 3.  看一下`package.json`，注意这里默认已经将主进程入口文件配置为`index.js`（而不是`main.js`）。
 
-![](//upload-images.jianshu.io/upload_images/1293833-e87f7efe3d3a967c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/564)
+![](../img/2018-4-8/4.png)
 
 
     为避免后面混乱，某还是将这里的`src/index.js`改成`src/main.js`，同时也要将文件`index.js`改名为`main.js`。
 
-![](//upload-images.jianshu.io/upload_images/1293833-c656992e549ec460.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/623)
+![](../img/2018-4-8/5.png)
 
 
 
@@ -113,19 +113,9 @@ electron-forge start
 3.  **加载和保存文本：**可以打开本地文本文件，支持`.txt`, `.js`, `.html`, `.md`等文本文件；可以将文本内容保存为本地文本文件。在**打开**或**新建**文件前，如果当前文档尚未保存，会提示用户先保存文档。
 4.  **退出程序：**退出窗口或程序时，会检测当前文档是否需要保存，如果尚未保存，提示用户保存。
 5.  **右键菜单：**支持右键菜单，可以通过菜单右键执行一些基本的操作，如：复制、粘贴等。
-    下面是这个记事本App的演示效果，源码下载点击 [这里](https://link.jianshu.com?t=https://github.com/XMandarava/Demo-Electron-Notepad)。
+    下面是这个记事本App的演示效果，源码下载点击 [这里](https://github.com/XMandarava/Demo-Electron-Notepad)。
 
-    <div class="image-package">
-
-    <div class="image-container" style="max-width: 494px; max-height: 375px; background-color: transparent;">
-
-    <div class="image-view" data-width="494" data-height="375">![](//upload-images.jianshu.io/upload_images/1293833-b7b3ad2861ce423e.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/494)</div>
-
-    </div>
-
-    <div class="image-caption">Demo</div>
-
-    </div>
+  ![](../img/2018-4-8/6.gif)
 
 ## Notepad App功能细节
 
